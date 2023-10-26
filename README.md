@@ -7,13 +7,13 @@ Web version for desktop app, for making label for images
 ## Особенности
 
 - Регистрация пользователей
-- ![Login](путь_к_изображению)
+- ![Login](images/Login.png)
 
 - Интерфейс для загрузки и отправки изображений на сервер.
-- ![Classifier1](путь_к_изображению)
+- ![Classifier1](images/classificator1.png)
   
 - Сохранение результатов анализа.
-- ![Classifier2](путь_к_изображению)
+- ![Classifier2](images/classificator2.png)
 
 
 ## Ссылка на проект
