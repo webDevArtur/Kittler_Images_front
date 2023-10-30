@@ -1,0 +1,22 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Медиа-запрос для адаптивности при меньших экранах (например, мобильных устройствах) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Пример: изменение размера шрифта для меньших экранов */
+  }
+}
+
+/* Другие медиа-запросы и стили для различных разрешений экрана */
