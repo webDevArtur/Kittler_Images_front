@@ -2,10 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
-import Home from './components/Content/Home/Home';
-import Classifier from './components/Content/Classifier/Classifier';
-import About from './components/Content/About/About';
-import Contact from './components/Content/Contact/Contact';
+import Classifier from './components/Classifier/Classifier';
+
 
 function App() {
     // Проверяем, авторизован ли пользователь (по наличию токена в localStorage)
@@ -17,10 +15,7 @@ function App() {
                 <Route exact path="/" component={Login} />
                 <Route path="/register" component={Register} />
                 {/* Добавляем проверку на аутентификацию для защищенных маршрутов */}
-                <PrivateRoute path="/home" component={Home} isAuthenticated={isAuthenticated} />
                 <PrivateRoute path="/classifier" component={Classifier} isAuthenticated={isAuthenticated} />
-                <PrivateRoute path="/about" component={About} isAuthenticated={isAuthenticated} />
-                <PrivateRoute path="/contact" component={Contact} isAuthenticated={isAuthenticated} />
             </Switch>
         </Router>
     );

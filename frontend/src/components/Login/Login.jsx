@@ -32,7 +32,7 @@ function Login() {
                 setMessage('Вход выполнен успешно');
                 setMessageType('success');
                 setTimeout(() => {
-                    history.push('/home');
+                    history.push('/classifier');
                 }, 1000);
             } else {
                 setMessage('Произошла ошибка при аутентификации. Пожалуйста, попробуйте еще раз.'); // Display the error message from the API

@@ -15,22 +15,10 @@ function Header() {
     return (
         <header>
             <nav>
-                <Link to="/home">
+                <Link to="/classifier">
                     <img src="/images/icon.png" alt="НИЯУ МИФИ" className={styles.label} />
                 </Link>
                 <ul>
-                    <li>
-                        <Link to="/home">Главная</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">Информация</Link>
-                    </li>
-                    <li>
-                        <Link to="/classifier">Классификатор</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Контакты</Link>
-                    </li>
                     <li>
                         <Link to="#" onClick={handleLogout} className={styles.more}>Выход</Link>
                     </li>
